@@ -2,7 +2,7 @@
 
 public class qsort{
 	private int length; 
-	public int array[];
+	private int array[];
 
 	public void sort(int[] input){
         if (input == null){
