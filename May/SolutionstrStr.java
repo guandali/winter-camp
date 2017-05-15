@@ -9,18 +9,18 @@ public class SolutionstrStr {
         }
         
         for(int i = 0; i < haystack.length(); i++){
-           if(haystack.charAt(i) == needle.charAt(0)){
-               for( int j = 0; j < needle.length() && i+j <haystack.length(); j++ ){
+               for( int j = 0; ; j++ ){
+                  if(i+j == haystack.length()){
+                       return -1;
+                   }
                    if(haystack.charAt(j+i) != needle.charAt(j)){
                        break;
                    }
-                   else if(j == needle.length()-1){
+                   if(j == n_len -1){
                        return i;
                    }
                    
                }
-               
-           }
         }
         
         return -1;
