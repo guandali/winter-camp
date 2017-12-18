@@ -24,4 +24,4 @@ class SolutionCheckInclusion {
         for(int i = 0; i< counts.length;i++) if(counts[i] != current[i]) return false;
         return true;
     }
-}s
+}
